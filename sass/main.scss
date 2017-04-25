@@ -1,0 +1,207 @@
+@import 'variables';
+@import 'fonts';
+
+ *{
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+ }
+
+body {
+	background: white;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*////////////////////////
+//       Aplicacion
+////////////////////////*/
+
+.aplication {
+	width: 360px;
+	margin: 50px auto;
+	border-radius: 15px 15px 15px 15px;
+    overflow: hidden;
+	border: 1px solid #e6e2e2;
+
+	&_head {
+		background-color: $color1;
+	    text-align: center;
+	    padding: 15px;
+	    text-transform: uppercase;
+
+	    h1 {
+	    	font-size: 18px;
+	    	font-weight: 300;
+	    }
+	}
+
+	&_body {
+		background: $color2;
+
+		&_head {
+			display: flex;
+    		justify-content: space-around;
+			padding: 20px 20px 0px 20px;
+
+    		.team {
+    			text-align: center;
+    			img {
+					width: 80px;
+    			}
+
+    			h2 {
+    				color: $color-title;
+    				font-size: 16px;
+    				margin-bottom: 5px;
+    			}
+
+    			p {
+    				color: $color-text;
+    				font-size: 12px;
+    			}
+    		}
+
+    		.player {
+    			position: relative;
+    			&_img {
+    				width: 160px;
+					height: 100%;
+    				img {
+    					width: 100%;
+						height: 100%;
+    				}
+    			}
+
+    			a {
+					display: block;
+					width: 40px;
+					height: 40px;
+					padding: 10px;
+					background-color: white;
+					border-radius: 40px;
+					position: absolute;
+					bottom: -15px;
+					right: -10px;
+					box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.2);
+					&:hover {
+						box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.3);
+					}
+					img {
+						width: 100%;
+					}
+    			}
+    		}
+		}
+
+
+		&_person {
+			display: flex;
+		    justify-content: space-around;
+		    padding: 20px;
+		    text-align: center;
+			background: #f5efef;
+
+		    h3 {
+    			color: $color-text;
+    			margin-bottom: 5px;
+    			font-weight: 400;
+    			font-size: 16px;
+
+		    }
+
+		    p {
+		    	color: $color-title;
+		    }
+		}
+
+		&_statistics {
+			display: flex;
+		    justify-content: space-around;
+		    padding: 20px;
+		    text-align: center;
+
+		    h3 {
+    			color: $color-text;
+    			margin-bottom: 5px;
+    			font-weight: 400;
+    			font-size: 16px;
+		    }
+
+			p {
+				color: $color-title;
+			}
+
+			.card {
+				display: flex;
+				p {
+			    	color: $color-title;
+
+			    	span {
+					    padding: 2px 8px;
+					    margin-right: 5px;
+					    margin-left: 5px;
+					    &.card-red {
+					    	background-color: $color1;
+					    }
+					    &.card-yellow {
+					    	background-color: yellow;
+					    }
+					}
+		    	}
+			}
+		}
+
+
+		&_notice {
+			display: block;
+			padding: 30px 20px;
+
+			.player_info {
+				width: 290px;
+				height: 290px;
+				position: relative;
+				display: block;
+    			margin: auto;
+				overflow: hidden;
+				border-radius: 5px;
+    			&:hover {
+					&:after {
+						background-color: rgba(0, 0, 0, 0);
+					}
+
+					img {
+						transform: scale(1.1);
+					}
+    			}
+
+    			&:after {
+					content: '';
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					background-color: rgba(0, 0, 0, 0.2);
+					z-index: 1;
+					transform: scale(1.1);
+    			}
+
+				img {
+					width: 100%;
+					transition: all .2s;
+				}
+
+				h4 {
+					position: absolute;
+				    bottom: 30px;
+				    left: 20px;
+				    color: white;
+				    z-index: 2;
+				    font-size: 22px;
+   					text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+				}
+			}
+
+		}
+	}
+}

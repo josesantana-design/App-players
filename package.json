@@ -1,0 +1,23 @@
+{
+  "name": "App Players",
+  "version": "0.0.1",
+  "description": "Aplicacion de jugadores de futbol en PHP Y MYSQL",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.18.6",
+    "chalk": "^1.1.3",
+    "gulp": "^3.9.1",
+    "gulp-notify": "^2.2.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "gulp": "^3.9.1",
+    "gulp-fontmin": "^0.7.4",
+    "gulp-sass": "^3.1.0"
+  }
+}
